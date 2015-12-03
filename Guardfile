@@ -48,6 +48,7 @@ guard :rspec, cmd: "rspec" do
   # updating guard file
   watch(%r{^app/controllers/(.+)_(controller)\.rb$}) { 'spec/features' }
   watch(%r{^app/models/(.+)\.rb$}) { 'spec/features' }
+  watch(%r{^app/spec/features/(.+)\.rb$}) { 'spec/features' }
 
 
 
