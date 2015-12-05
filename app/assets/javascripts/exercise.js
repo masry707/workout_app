@@ -1,3 +1,3 @@
 $(document).ready(function(){
-    $('#workout-date').datepicker({ DateFormat: 'yy-mm-dd' });
+    $('#exercise_workout_date').datepicker({ DateFormat: 'yy-mm-dd' });
 });
