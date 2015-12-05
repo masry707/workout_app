@@ -8,6 +8,24 @@
 
         <div class="form-group">
           <div class="col-md-3 control-label">
+            <%= f.label :first_name %>
+          </div>
+          <div class="col-md-9">
+            <%= f.text_field :first_name, class: 'form-control', autofocus: true %>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-md-3 control-label">
+            <%= f.label :last_name %>
+          </div>
+          <div class="col-md-9">
+            <%= f.text_field :last_name, class: 'form-control', autofocus: true %>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-md-3 control-label">
             <%= f.label :email %>
           </div>
           <div class="col-md-9">
