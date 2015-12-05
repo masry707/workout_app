@@ -11,6 +11,12 @@ Rails.application.routes.draw do
     resources :exercises
   end
 
+  resource :pages, only: [:home] do
+    collection do
+      post :search, to: 'pages#search'
+    end
+  end
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
