@@ -14,7 +14,7 @@ RSpec.feature 'Searching for member' do
     expect(page).to have_content(@john.full_name)
     expect(page).to have_content(@sarah.full_name)
 
-    expect(page.current_path).to eq('/pages/search')
+    expect(page.current_path).to eq('/search')
 
   end
 end

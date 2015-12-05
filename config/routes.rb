@@ -11,12 +11,15 @@ Rails.application.routes.draw do
     resources :exercises
   end
 
-  # route for search path
-  resource :pages, only: [:home] do
-    collection do
-      post :search, to: 'pages#search'
-    end
-  end
+  # route for search path from tutorials
+  # resource :pages, only: [:home] do
+  #   collection do
+  #     post :search, to: 'pages#search'
+  #   end
+  # end
+
+  # my idea to make search
+  post :search, to: 'pages#search', as: :search
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
