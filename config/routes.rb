@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     resources :exercises
   end
 
+  # route for search path
   resource :pages, only: [:home] do
     collection do
       post :search, to: 'pages#search'
