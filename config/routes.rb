@@ -21,6 +21,8 @@ Rails.application.routes.draw do
   # my idea to make search
   post :search, to: 'pages#search', as: :search
 
+  resources :friendships, only: [:show, :create, :destroy]
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
